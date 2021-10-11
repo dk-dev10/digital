@@ -1,0 +1,57 @@
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:hover > input {
+    border-color: #000;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 10px;
+    border: 1px solid #dfe3e6;
+    border-radius: 3px;
+
+    transition: 0.2s;
+
+    &:focus {
+      border-color: #dfe3e6;
+    }
+
+    &:disabled {
+      border-color: #808080;
+    }
+  }
+
+  ::placeholder {
+    color: #bec5cc;
+  }
+
+  &Error {
+    input {
+      border-color: #ea0029;
+    }
+
+    &:hover > input {
+      border-color: #ea0029;
+    }
+
+    &:after {
+      content: 'Поле обязательно для заполнения';
+      font-size: 10px;
+      line-height: 12px;
+      position: relative;
+      bottom: 0px;
+      color: #ea0029;
+    }
+  }
+}

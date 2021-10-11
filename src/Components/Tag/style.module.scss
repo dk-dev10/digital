@@ -1,0 +1,33 @@
+.tag {
+  span {
+    font-size: 14px;
+    line-height: 24px;
+
+    border-radius: 50px;
+    padding: 6px 12px;
+    background: #dfe3e6;
+
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+
+    &:checked + span,
+    &:active + span {
+      background: linear-gradient(
+          255.35deg,
+          #dc3131 0.83%,
+          rgba(255, 79, 79, 0) 108.93%
+        ),
+        #ff5e56;
+      color: #fff;
+    }
+  }
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}

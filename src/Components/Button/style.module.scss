@@ -1,0 +1,64 @@
+.btn {
+  background: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &Small {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  &Long {
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+    background: linear-gradient(
+        255.35deg,
+        #dc3131 0.83%,
+        rgba(255, 79, 79, 0) 108.93%
+      ),
+      #ff5e56;
+
+    transition: background 0.3s;
+
+    &:hover {
+      background: #ea0029;
+      color: #fff;
+    }
+  }
+
+  &:disabled {
+    background: #bec5cc;
+    border-color: #bec5cc;
+    color: #fff;
+    cursor: no-drop;
+    box-shadow: none;
+  }
+}
+
+.buttonText {
+  background: none;
+  border: none;
+  color: #ea0029;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.mb {
+  margin-bottom: 24px;
+}
